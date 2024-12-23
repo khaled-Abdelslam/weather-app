@@ -1,0 +1,195 @@
+
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url(../fonts/Open_Sans/static/OpenSans-Bold.ttf);
+}
+
+
+/* nav start */
+nav {
+
+    background-color: #1E202B;
+
+}
+
+
+
+
+
+/* nav end */
+
+/* find weather start */
+
+body {
+    background-color: #262936
+}
+
+.contain {
+    height: 70vh;
+}
+
+.contain .backImage {
+    background-image: url(../pics/banner.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.contain .backColor {
+    background-color: #1E202B;
+}
+
+
+form {
+    background-color: #1E202B;
+    height: 50px;
+}
+
+#searchInput {
+    width: 90%;
+    background-color: transparent;
+    border: none;
+    color: #31323B;
+
+}
+
+#searchInput:focus {
+    border: none;
+}
+
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+
+.form-control::-webkit-input-placeholder {
+    color: #757575;
+}
+
+
+
+#submit {
+    width: 10%;
+}
+
+/* data start */
+
+#today .card-header {
+    background-color: #2D303D;
+}
+
+
+#today {
+    background-color: #323544;
+    color: #BFC1C8;
+    height: 400px;
+}
+
+#today .location {
+
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+}
+
+#today .degree .num {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    font-family: "OpenSans-Bold";
+}
+
+
+#nextDay .card-header {
+    background-color: #222530;
+}
+
+#nextDay {
+
+    background-color: #262936;
+    color: #BFC1C8;
+    height: 400px;
+}
+
+#nextDay .degree .num {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    font-family: "OpenSans-Bold";
+
+}
+
+.backColor .container {
+    position: relative;
+    transform: translateY(-40%);
+    -webkit-transform: translateY(-40%);
+    -moz-transform: translateY(-40%);
+    -ms-transform: translateY(-40%);
+    -o-transform: translateY(-40%);
+}
+
+
+
+
+
+
+/* data end */
+
+
+
+/* find weather end */
+
+
+
+/* footer start */
+footer {
+    background-color: #262936;
+    height: 30%;
+}
+
+footer p {
+
+    color: #BFC1C8;
+}
+
+footer a {
+    display: flex;
+    margin: 0 1% 0 1%;
+    height: 40px;
+    width: 40px;
+    background-color: #1E202B;
+    color: #009AD8 !important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: white !important;
+    background-color: #009AD8;
+}
+
+#subscribeInput {
+    width: 90%;
+    background-color: transparent;
+    border: none;
+    color: #31323B;
+
+}
+
+#subscribeInput:focus {
+    border: none;
+}
+
+
+
+
+/* footer end */

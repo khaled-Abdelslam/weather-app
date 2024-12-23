@@ -1,0 +1,169 @@
+
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url(../fonts/Open_Sans/static/OpenSans-Bold.ttf);
+}
+
+body {
+    background-color: #1E202B;
+}
+
+/* nav start */
+nav {
+
+    background-color: #1E202B;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* nav end */
+
+/* find weather start */
+
+
+
+
+
+
+
+
+.path {
+    background-color: #262936;
+    height: 50px;
+}
+
+.path a{
+    text-decoration: none;
+    color:  #757575;
+}
+
+
+
+
+
+
+
+.form-control::-webkit-input-placeholder {
+    color: #757575;
+}
+
+
+
+#submit {
+    width: 10%;
+}
+
+.contactDetails .inner{
+  background-color:#262936;
+  width: 430px;
+  height: 330px;
+  border-radius:3% ;
+  -webkit-border-radius:3% ;
+  -moz-border-radius:3% ;
+  -ms-border-radius:3% ;
+  -o-border-radius:3% ;
+  color: #BFC1C8;
+}
+
+.contactDetails .inner i{
+    color: #0BACDB;
+}
+
+.contactDetails .inner a{
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.title{
+
+    color: #BFC1C8;
+}
+
+
+
+#yourname , #companyname , #emailaddress , #website{
+    width: 48%;
+    background-color: transparent;
+    border: solid 1px #31323B;
+    color: white;
+
+}
+
+
+#message {
+
+    width: 98%;
+    background-color: transparent;
+    border: solid 1px #31323B;
+    color: white;
+    margin-left: 1%;
+
+
+}
+
+
+
+
+/* find weather end */
+
+
+
+/* footer start */
+footer {
+    background-color: #262936;
+    height: 30%;
+}
+
+footer form{
+    background-color: #1E202B;
+}
+
+footer p {
+
+    color: #BFC1C8;
+}
+
+footer a {
+    display: flex;
+    margin: 0 1% 0 1%;
+    height: 40px;
+    width: 40px;
+    background-color: #1E202B;
+    color: #009AD8 !important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: white !important;
+    background-color: #009AD8;
+}
+
+
+#subscribeInput {
+    width: 90%;
+    background-color: transparent;
+    border: none;
+    color: #31323B;
+
+}
+
+
+
+/* footer end */
