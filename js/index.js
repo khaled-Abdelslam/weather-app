@@ -1,6 +1,5 @@
 let searchInput = document.getElementById("searchInput");
 let contact = document.getElementById("contact");
-
 let forecastWeather = [];
 let city = "";
 
@@ -8,30 +7,39 @@ contact.addEventListener("click", function () {
   window.location.href = "../contact.html";
 });
 
+//search for location
 searchInput.addEventListener("input", function () {
   city = searchInput.value;
   getWeather(city);
 });
 
+//Api Fetch
 getWeather("london");
 
 async function getWeather(location) {
-  let response = await (
-    await fetch(
-      `https://api.weatherapi.com/v1/forecast.json?key=3feabf89d8a8480b8b4144141242012&q=${location}&days=3`
-    )
-  ).json();
+  try {
+    let response = await (
+      await fetch(
+        `https://api.weatherapi.com/v1/forecast.json?key=3feabf89d8a8480b8b4144141242012&q=${location}&days=3`
+      )
+    ).json();
 
-  forecastWeather = response.forecast.forecastday;
+    forecastWeather = response.forecast.forecastday;
 
-  console.log("hi");
-  display();
+    display();
+  } catch (error) {
+    console.log(error);
+  }
 }
 
+//Display function
 function display() {
   let container = "";
 
   container += `
+
+  
+
        <div class="col-md-4">
 
               <div class="card z-3 w-100 rounded-0 " id="today">
@@ -71,6 +79,9 @@ function display() {
               </div>
             </div>
 
+
+
+
             <div class="col-md-4">
 
               <div class="card z-3 w-100 text-center rounded-0" id="nextDay">
@@ -108,6 +119,10 @@ function display() {
 
               </div>
             </div>
+
+
+
+            
 
             <div class="col-md-4">
 
